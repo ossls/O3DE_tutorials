@@ -98,9 +98,6 @@ The first step will be to get the Script Event and connect to it in order to han
 ```lua
 function SaveSystem:OnActivate()
 
-    -- Get the ScriptEvent asset, this registers and makes it available for us
-    self.scriptEventAsset = self.Properties.SaveSystemScriptEvents:Get(self)
-
     -- Connect to the Script Event (SaveEvents is the name of the ScriptEvent we specified in the ScriptEvent asset)
     self.theScriptEvent = SaveEvents.Connect(self)   
 end
@@ -152,9 +149,6 @@ local SaveSystem =
 }
 
 function SaveSystem:OnActivate()
-
-    -- Get the ScriptEvent asset, this registers and makes it available for us
-    self.scriptEventAsset = self.Properties.SaveSystemScriptEvents:Get(self)
 
     -- Connect to the Script Event (SaveEvents is the name of the ScriptEvent we specified in the ScriptEvent asset)
     self.theScriptEvent = SaveEvents.Connect(self)   
@@ -228,7 +222,6 @@ end
 -- When the entity that owns this script is Activated, we will load the saved data and broadcast it
 function RestoreSystem:OnActivate()
 	
-    self.scriptEventAsset = self.Properties.SaveSystemScriptEvents:Get(self)
     self.theScriptEvent = SaveEvents.Connect(self)
     
     -- For now, we will immediately load our data when this script is activated
