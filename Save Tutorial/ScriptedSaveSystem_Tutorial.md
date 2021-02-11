@@ -225,7 +225,7 @@ function RestoreSystem:OnActivate()
     self.theScriptEvent = SaveEvents.Connect(self)
     
     -- For now, we will immediately load our data when this script is activated
-    Load()
+    self.Load()
 end
 
 function RestoreSystem:OnDeactivate()
