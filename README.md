@@ -3,4 +3,4 @@ O3DE Game Development Tutorials
 
 Welcome!
 
-This repository contains tutorials for developing using the [O3DE engine](http://o3de.org).
+This repository contains tutorials for developing with [O3DE engine](http://o3de.org).
