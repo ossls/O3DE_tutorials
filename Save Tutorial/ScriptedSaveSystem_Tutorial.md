@@ -265,4 +265,4 @@ dir = 'C:\\users\\' .. username .. '\\Documents'
 
 - Be careful to keep your Script Event file, both Save and Restore function's number of parameters and the Lua script files synchronized. You need to make sure that the same number of parameters are being sent and received.
 
-- This system was not tested extensively against all Script Events supported types, it is possible some of them do not encode correctly, and the example scripts above do not provide much in terms of error detection, however lua.json does provide some features that could be leveraged to ensure correctness.
+- This system was not tested extensively against all Script Events supported types, it is possible some of them do not encode correctly, and the example scripts above do not provide much in terms of error detection, however [lua.json](https://github.com/rxi/json.lua) does provide some features that could be leveraged to ensure correctness.
